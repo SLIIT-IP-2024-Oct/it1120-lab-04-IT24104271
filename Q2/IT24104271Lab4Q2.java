@@ -8,7 +8,7 @@ public class IT24104271Lab4Q2 {
 
         int status = 0;
                System.out.print("Please enter exam marks (out of 100): ");
-        int examMarks = scanner.nextInt();
+        double examMarks = scanner.nextDouble();
 
                 if (examMarks < 0 || examMarks > 100) {
             status = 1;         }
@@ -16,7 +16,7 @@ public class IT24104271Lab4Q2 {
         
         else if (status == 0) { 
             System.out.print("Please enter lab submission marks (out of 100): ");
-            int labMarks = scanner.nextInt();
+            double labMarks = scanner.nextDouble();
 
                         if (labMarks < 0 || labMarks > 100) {
                 status = 2;
@@ -25,11 +25,11 @@ public class IT24104271Lab4Q2 {
             
             else if (status == 0) {
                 System.out.print("Please enter the percentages given for the exam: ");
-                int examPercentage = scanner.nextInt();
+                double examPercentage = scanner.nextDouble();
 
                 
                 System.out.print("Please enter the percentages given for the lab submission: ");
-                int labPercentage = scanner.nextInt();
+                double labPercentage = scanner.nextDouble();
 
                                 if (examPercentage + labPercentage != 100) {
                     status = 3;                 }
